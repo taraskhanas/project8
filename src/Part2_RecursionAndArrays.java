@@ -7,14 +7,14 @@ public class Part2_RecursionAndArrays {
         System.out.println(arrayContains(array, 2, 0));
     }
 
-    public static void printArray(int[] array, int i){
-        if(i < array.length) {
+    public static void printArray(int[] array, int i) {
+        if (i < array.length) {
             System.out.printf("%d ", array[i]);
             printArray(array, i + 1);
         }
     }
 
-    public static int arraySum(int[] array, int i){
+    public static int arraySum(int[] array, int i) {
         if (i == array.length) {
             return 0;
         }
@@ -22,15 +22,14 @@ public class Part2_RecursionAndArrays {
         return sum + arraySum(array, i + 1);
     }
 
-    public static int arrayContains(int[] array,int value, int i){
+    public static int arrayContains(int[] array, int value, int i) {
         if (i == array.length) {
             return 0;
         }
         int count;
-        if(array[i] == value) {
+        if (array[i] == value) {
             count = 1;
-        }
-        else {
+        } else {
             count = 0;
         }
         return count + arrayContains(array, value, i + 1);

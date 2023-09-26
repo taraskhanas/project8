@@ -9,21 +9,23 @@ public class Part3_Optional {
 
     }
 
-    public static void printString(String str){
+    public static void printString(String str) {
         if (str.isEmpty()) {
             return;
         }
         System.out.println(str.charAt(0));
         printString(str.substring(1));
     }
-    public static void printReverseString(String str){
+
+    public static void printReverseString(String str) {
         if (str.isEmpty()) {
             return;
         }
         System.out.println(str.charAt(str.length() - 1));
         printReverseString(str.substring(0, str.length() - 1));
     }
-    public static String getReverseString(String str){
+
+    public static String getReverseString(String str) {
         if (str.isEmpty()) {
             return "";
         }

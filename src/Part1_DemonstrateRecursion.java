@@ -5,20 +5,19 @@ public class Part1_DemonstrateRecursion {
         countdown(9, 1);
         System.out.println("");
         countup(9);
-
     }
 
-    public static void countup(int n){
-        if(n > 0){
+    public static void countup(int n) {
+        if (n > 0) {
             System.out.printf("%d ", n);
             countup(n - 1);
         }
     }
 
-    public static void countdown(int n, int i){
-        if(i <= n){
+    public static void countdown(int n, int i) {
+        if (i <= n) {
             System.out.printf("%d ", i);
-            countdown(n,i + 1);
+            countdown(n, i + 1);
         }
     }
 }
